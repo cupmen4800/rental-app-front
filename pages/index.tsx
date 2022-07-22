@@ -1,11 +1,14 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
+import Link from 'next/link'
 
 const Home = () => {
   return (
-    <div>
-      <h1>AAA</h1>
-    </div>
+    <>
+      <div>
+        <h1 className='text-lg'>とりあえずこっち</h1>
+        <Link href="/explore"><a className='primary-btn'>explore</a></Link>
+      </div>
+    </>
   )
 }
 
