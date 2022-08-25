@@ -3,7 +3,35 @@
 @tailwind utilities;
 
 @layer components {
-  .primary-btn {
-    @apply bg-blue-700 text-white font-bold py-2 px-4 rounded text-lg;
+
+  html {
+    @apply bg-white dark:bg-zinc-900 text-black dark:text-white;
   }
+
+  .btn {
+    @apply text-white font-bold py-2 px-4 rounded-2xl text-lg shadow-md transition flex justify-center items-center;
+  }
+  
+  .outline-btn {
+    @apply border bg-none;
+  }
+
+  .primary-btn {
+    @apply  bg-blue-700  shadow-blue-500 dark:shadow-blue-900 hover:shadow-lg hover:shadow-blue-400 dark:hover:shadow-blue-700;
+  }
+  
+  .primary-outline-btn {
+    @apply border-blue-700 text-blue-700 dark:text-white hover:bg-blue-700 hover:text-white hover:shadow-blue-900;
+  }
+
+  .create-form {
+    @apply text-xl bg-white dark:bg-zinc-900 rounded-3xl border-2 border-gray-200 dark:border-gray-600 px-3 py-2 w-full focus:border-blue-700 dark:focus:border-blue-500 focus:outline-none transition;
+  }
+  
+  .news_page {
+    h2 {
+      @apply text-2xl my-2 font-bold
+    };
+  }
+
 }
